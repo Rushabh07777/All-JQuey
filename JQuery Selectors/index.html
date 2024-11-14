@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <p id="myPara">Hello Nature</p>
+
+    <strong>Hello Grasses </strong>
+
+    <div class="box">such as the weather and geology of the Earth</div>
+
+    <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="image" height="250px" width="350px">
+
+
+    <script>
+        $(document).ready(function () {
+
+            // Id selector
+            let myText = $('#myPara').text();
+
+            console.log(myText);
+
+            // Tag selector
+
+            let newText = $('strong').text();
+
+            console.log(newText);
+
+            //class selector
+
+            let myClass = $('.box').text();
+
+            console.log(myClass)
+
+            // attribute
+
+            let myAttr = $('img').attr.src = "https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75"
+
+            console.log(myAttr);
+
+        })
+    </script>
+
+</body>
+
+</html>
