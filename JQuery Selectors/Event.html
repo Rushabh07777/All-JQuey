@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS.js"></script>
+</head>
+<body>
+    <button class="btn">Submit</button>
+    <script>
+        // on click//
+        /*$(document).ready(function(){
+
+            $(".btn").click(function(){
+             alert("Kaise Hoo")
+            });
+ 
+            $("#btn").on("click",()=>{
+                 alert("On Click")
+            })
+ 
+         });*/
+
+// Keyprees // 
+
+/*
+$(document).ready(function(){
+
+           
+    $(document).on("keydown",(event)=>{
+
+        if(event.key == "g" || event.key == "G"){
+            alert("Hello world")
+        }
+    })
+
+
+});
+*/
+
+// dblclick // 
+
+
+$(document).ready(function(){
+
+    $(".btn").dblclick(function(){
+     alert("Kaise Hoo");
+     $(".btn").css("background-color", "red")
+    });
+
+
+ });
+
+    </script>
+</body>
+</html>
